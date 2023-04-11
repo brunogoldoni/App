@@ -4,24 +4,24 @@ import { INavigation } from './types';
 
 import * as S from '../styles';
 
-const Home = ({ navigation }: INavigation) => {
+const Login = ({ navigation }: INavigation) => {
   function handleNavigation() {
-    navigation.navigate('login');
+    navigation.navigate('home');
   };
 
   return (
-  <S.Container>
-    <S.Title>Home Screen</S.Title>
+    <S.Container>
+      <S.Title>Login Screen</S.Title>
 
-    <S.Button  
+      <S.Button  
       onPress={handleNavigation}
     >
       <S.ButtonTitle>
-        Login
+        Home
       </S.ButtonTitle>
     </S.Button>
-  </S.Container>
+    </S.Container>
   );
 }
 
-export default Home;
+export default Login;

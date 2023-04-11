@@ -5,7 +5,8 @@ import { useFonts, Roboto_400Regular, Roboto_500Medium, Roboto_700Bold, Roboto_9
 
 import theme from './src/theme';
 
-import { Home } from '@screens/Home';
+import { Routes } from './src/routes';
+
 import { WrapperActivityIndicator } from '@screens/styles'
 
 export default function App() {
@@ -13,7 +14,7 @@ export default function App() {
 
   return (
   <ThemeProvider theme={theme}>
-    {fontsLoaded ? <Home /> : <WrapperActivityIndicator><ActivityIndicator /></WrapperActivityIndicator>}
+    {fontsLoaded ? <Routes /> : <WrapperActivityIndicator><ActivityIndicator /></WrapperActivityIndicator>}
   </ThemeProvider>
   );
 }
