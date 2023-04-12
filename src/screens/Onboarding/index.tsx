@@ -3,6 +3,7 @@ import React from 'react';
 import { INavigation } from '@screens/types';
 
 import * as S from './styles';
+import * as GS from '../styles';
 
 const Onboarding = ({ navigation }: INavigation) => {
   function handleNavigate() {
@@ -10,7 +11,7 @@ const Onboarding = ({ navigation }: INavigation) => {
   };
 
   return (
-    <S.Container>
+      <GS.Container>
         <S.Content>
           <S.WrapperTitle>
             <S.Title>Generation</S.Title>
@@ -27,7 +28,7 @@ const Onboarding = ({ navigation }: INavigation) => {
             <S.ArrowIcon />
           </S.Button>
         </S.Footer>
-    </S.Container>
+      </GS.Container>
   );
 }
 

@@ -1,16 +1,17 @@
 import styled from "styled-components/native";
+import { SafeAreaView } from 'react-native-safe-area-context';
 
-export const WrapperActivityIndicator = styled.View`
+export const Container = styled(SafeAreaView)`
   flex: 1;
-  align-items: center;
-  justify-content: center;
+  padding: 24px;
+  background-color: ${({ theme }) => theme.COLORS.BACK_GROUND};
 `;
 
-export const Container = styled.View`
+export const LoadingContainer = styled.View`
   flex: 1;
   align-items: center;
   justify-content: center;
-  background-color: ${({ theme }) => theme.COLORS.GRAY_100};
+  background-color: ${({ theme }) => theme.COLORS.BACK_GROUND};
 `;
 
 export const Title = styled.Text`

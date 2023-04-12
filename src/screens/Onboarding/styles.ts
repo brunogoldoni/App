@@ -1,12 +1,6 @@
 import styled from "styled-components/native";
 import { ArrowRight } from 'phosphor-react-native';
 
-export const Container = styled.View`
-  flex: 1;
-  padding: 16px;
-  background-color: ${({ theme }) => theme.COLORS.BACK_GROUND};
-`;
-
 export const Content = styled.View`
   flex: 1;
   align-items: flex-start;
@@ -45,7 +39,7 @@ export const SubTitle = styled.Text`
 
 export const Description = styled.Text`
   width: 80%;
-  margin-top: 50%;
+  margin-top: 60%;
   
   font-weight: bold;
   line-height: 32px;
