@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { INavigation } from './types';
+import { INavigation } from '@screens/types';
 
 import * as S from '../styles';
 

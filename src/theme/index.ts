@@ -6,11 +6,20 @@ export default {
 
     // SECONDARY_100: '#',
 
-    WHITE: '#FFFFFF',
+    BACK_GROUND: '#29292E',
 
+    BLACK_900: '#000000',
+
+    BLUE: '#236DF8',
+    
     GRAY_100: '#F2F2F2',
+    GRAY_200: '#7C7C8A',
+    GRAY_300: '#323238',
+    GRAY_400: '#202024',
 
-    BLACK_900: '#000000'
+    GREEN: '#05E219',
+
+    WHITE: '#FFFFFF'
   },
 
   FONT_FAMILY: {
@@ -25,8 +34,10 @@ export default {
     S_8: 16,
     S_9: 18,
     S_10: 20,
+    S_11: 22,
     S_12: 24,
     S_14: 28,
+    S_16: 32
   },
 
   styles: StyleSheet.create({

@@ -16,7 +16,7 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <StatusBar
         translucent
-        barStyle="dark-content"
+        barStyle="light-content"
         backgroundColor="transparent"
       />
       {fontsLoaded ? <Routes /> : <WrapperActivityIndicator><ActivityIndicator /></WrapperActivityIndicator>}
