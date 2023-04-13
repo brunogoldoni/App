@@ -1,8 +1,11 @@
-import 'styled-componens';
-import theme from '../theme';
+/* eslint-disable @typescript-eslint/no-empty-interface */
+// eslint-disable-next-line import/no-unresolved
+import "styled-componens";
+import theme from "../theme";
 
-declare module 'styled-components' {
+declare module "styled-components" {
   type ThemeType = typeof theme;
 
-  export interface DefaultTheme extends ThemeType { }
+  // eslint-disable-next-line @typescript-eslint/naming-convention
+  export interface DefaultTheme extends ThemeType {}
 }
