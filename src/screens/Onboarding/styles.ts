@@ -1,5 +1,5 @@
+import { ArrowRight } from "phosphor-react-native";
 import styled from "styled-components/native";
-import { ArrowRight } from 'phosphor-react-native';
 
 export const Content = styled.View`
   flex: 1;
@@ -14,7 +14,7 @@ export const Title = styled.Text`
   margin-top: 20%;
 
   color: ${({ theme }) => theme.COLORS.WHITE};
-  
+
   font-weight: bold;
   line-height: 32px;
   font-size: ${({ theme }) => theme.FONT_SIZE.S_16}px;
@@ -58,5 +58,5 @@ export const Button = styled.TouchableOpacity.attrs({})``;
 export const ArrowIcon = styled(ArrowRight).attrs(({ theme }) => ({
   size: 56,
   marginRight: 16,
-  color: theme.COLORS.GREEN
+  color: theme.COLORS.GREEN,
 }))``;

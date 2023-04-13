@@ -1,10 +1,10 @@
-import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 
 type RootParamList = {
   home: undefined;
   login: undefined;
-}
+};
 
 export interface INavigation {
-  navigation: NativeStackNavigationProp <RootParamList, 'home'>; 
+  navigation: NativeStackNavigationProp<RootParamList, "home">;
 }

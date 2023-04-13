@@ -1,39 +1,38 @@
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
-import { Onboarding, Home, Login } from '@screens/index';
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { Onboarding, Home, Login } from "@screens/index";
 
 const { Navigator, Screen } = createNativeStackNavigator();
 
-export function  AppRoutes() {
+export function AppRoutes() {
   return (
     <Navigator>
       <Screen
         options={{
-          title: '',
+          title: "",
           headerShown: false,
-          headerTransparent: true
+          headerTransparent: true,
         }}
         name="onboarding"
         component={Onboarding}
       />
       <Screen
         options={{
-          title: '',
+          title: "",
           headerShown: false,
-          headerTransparent: true
+          headerTransparent: true,
         }}
         name="login"
         component={Login}
       />
       <Screen
         options={{
-          title: '',
+          title: "",
           headerShown: false,
-          headerTransparent: true
+          headerTransparent: true,
         }}
         name="home"
         component={Home}
       />
     </Navigator>
-  )
-};
+  );
+}

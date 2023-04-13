@@ -1,25 +1,20 @@
-import React from 'react';
+import { INavigation } from "@screens/types";
+import React from "react";
 
-import { INavigation } from '@screens/types';
+import * as S from "../styles";
 
-import * as S from '../styles';
-
-const Login = ({ navigation }: INavigation) => {
+function Login({ navigation }: INavigation) {
   function handleNavigation() {
-    navigation.navigate('home');
-  };
+    navigation.navigate("home");
+  }
 
   return (
     <S.Container>
       <S.Title>Login Screen</S.Title>
 
-      <S.Button  
-      onPress={handleNavigation}
-    >
-      <S.ButtonTitle>
-        Home
-      </S.ButtonTitle>
-    </S.Button>
+      <S.Button onPress={handleNavigation}>
+        <S.ButtonTitle>Home</S.ButtonTitle>
+      </S.Button>
     </S.Container>
   );
 }
