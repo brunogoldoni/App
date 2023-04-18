@@ -13,10 +13,8 @@ export const WrapperTitle = styled.View`
 export const Title = styled.Text`
   margin-top: 20%;
 
+  line-height: 34px;
   color: ${({ theme }) => theme.COLORS.WHITE};
-
-  font-weight: bold;
-  line-height: 32px;
   font-size: ${({ theme }) => theme.FONT_SIZE.S_16}px;
   font-family: ${({ theme }) => theme.FONT_FAMILY.BLACK};
 `;
@@ -35,6 +33,12 @@ export const SubTitle = styled.Text`
   color: ${({ theme }) => theme.COLORS.WHITE}
   font-size: ${({ theme }) => theme.FONT_SIZE.S_11}px;
   font-family: ${({ theme }) => theme.FONT_FAMILY.MEDIUM};
+`;
+
+export const HighlightText = styled.Text`
+  color: ${({ theme }) => theme.COLORS.GREEN};
+  font-size: ${({ theme }) => theme.FONT_SIZE.S_11}px;
+  font-family: ${({ theme }) => theme.FONT_FAMILY.BOLD};
 `;
 
 export const Description = styled.Text`

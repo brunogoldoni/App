@@ -1,5 +1,4 @@
 import { INavigation } from "@screens/types";
-import React from "react";
 
 import * as GS from "../styles";
 import * as S from "./styles";
@@ -17,7 +16,9 @@ function Onboarding({ navigation }: INavigation) {
           <S.IncTitle>Inc.</S.IncTitle>
         </S.WrapperTitle>
 
-        <S.SubTitle>seu App de informações pessoais.</S.SubTitle>
+        <S.SubTitle>
+          seu <S.HighlightText>App</S.HighlightText> de informações pessoais.
+        </S.SubTitle>
 
         <S.Description>
           Aqui você encontra informativos diários de acordo com sua necessidade.
