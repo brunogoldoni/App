@@ -15,27 +15,17 @@ export const LoadingContainer = styled.View`
 `;
 
 export const Title = styled.Text`
-  font-weight: bold;
   line-height: 32px;
-  margin-bottom: 80px;
+  margin-bottom: 16px;
+  color: ${({ theme }) => theme.COLORS.GREEN};
   font-size: ${({ theme }) => theme.FONT_SIZE.S_14}px;
   font-family: ${({ theme }) => theme.FONT_FAMILY.BOLD};
 `;
 
-export const Button = styled.TouchableOpacity.attrs({})`
-  align-items: center;
-  justify-content: center;
-
-  background-color: #000000;
-  border-radius: 8px;
-  padding: 8px;
+export const SubTitle = styled.Text`
   width: 90%;
-`;
-
-export const ButtonTitle = styled.Text`
-  font-weight: bold;
-  line-height: 32px;
+  line-height: 24px;
   color: ${({ theme }) => theme.COLORS.WHITE};
-  font-size: ${({ theme }) => theme.FONT_SIZE.S_10}px;
-  font-family: ${({ theme }) => theme.FONT_FAMILY.BOLD};
+  font-size: ${({ theme }) => theme.FONT_SIZE.S_8}px;
+  font-family: ${({ theme }) => theme.FONT_FAMILY.REGULAR};
 `;

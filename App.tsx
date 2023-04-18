@@ -1,27 +1,24 @@
-import { StatusBar } from 'react-native';
-import { ThemeProvider } from 'styled-components';
-
+import Loading from "@components/Loading";
 import {
   useFonts,
   Roboto_400Regular,
   Roboto_500Medium,
   Roboto_700Bold,
-  Roboto_900Black
-} from '@expo-google-fonts/roboto';
+  Roboto_900Black,
+} from "@expo-google-fonts/roboto";
+import { LoadingContainer } from "@screens/styles";
+import { StatusBar } from "react-native";
+import { ThemeProvider } from "styled-components";
 
-import theme from './src/theme';
+import { Routes } from "./src/routes";
+import theme from "./src/theme";
 
-import { Routes } from './src/routes';
-
-import Loading from '@components/Loading';
-import { LoadingContainer } from '@screens/styles';
-
-const App = () => {
- const [fontsLoaded] = useFonts({
+function App() {
+  const [fontsLoaded] = useFonts({
     Roboto_400Regular,
     Roboto_500Medium,
     Roboto_700Bold,
-    Roboto_900Black
+    Roboto_900Black,
   });
 
   return (
@@ -31,11 +28,13 @@ const App = () => {
         barStyle="light-content"
         backgroundColor="transparent"
       />
-      {fontsLoaded ? <Routes /> : 
+      {fontsLoaded ? (
+        <Routes />
+      ) : (
         <LoadingContainer>
           <Loading color={theme.COLORS.GREEN} size="large" />
         </LoadingContainer>
-      }
+      )}
     </ThemeProvider>
   );
 }
