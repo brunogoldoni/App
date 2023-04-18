@@ -1,7 +1,8 @@
+import {Button, Input} from "@components/index";
 import { INavigation } from "@screens/types";
-import React from "react";
 
-import * as S from "../styles";
+import * as GS from "../styles";
+import * as S from "./styles";
 
 function Login({ navigation }: INavigation) {
   function handleNavigation() {
@@ -9,13 +10,27 @@ function Login({ navigation }: INavigation) {
   }
 
   return (
-    <S.Container>
-      <S.Title>Login Screen</S.Title>
+    <GS.Container>
+      <S.Header>
+        <GS.Title>Login</GS.Title>
+        <GS.SubTitle>
+          realize seu cadastro para ter acesso a todas funcionalidades do nosso{" "}
+          <S.HighlightText>App</S.HighlightText>.
+        </GS.SubTitle>
+      </S.Header>
 
-      <S.Button onPress={handleNavigation}>
-        <S.ButtonTitle>Home</S.ButtonTitle>
-      </S.Button>
-    </S.Container>
+      <S.Body>
+        <S.MB>
+          <Input placeholder="Digite seu email" />
+        </S.MB>
+
+        <Input placeholder="Digite sua senha" />
+      </S.Body>
+
+      <S.Footer>
+        <Button title="Entrar" onPress={handleNavigation} />
+      </S.Footer>
+    </GS.Container>
   );
 }
 
