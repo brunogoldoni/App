@@ -20,6 +20,8 @@ export default {
     GREEN: "#05E219",
 
     WHITE: "#FFFFFF",
+
+    ATTENTION: "#FF0000"
   },
 
   FONT_FAMILY: {
@@ -30,6 +32,7 @@ export default {
   },
 
   FONT_SIZE: {
+    S_6: 12,
     S_7: 14,
     S_8: 16,
     S_9: 18,
