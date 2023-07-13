@@ -1,4 +1,6 @@
-import Loading from "@components/Loading";
+import { StatusBar } from "react-native";
+import { ThemeProvider } from "styled-components";
+
 import {
   useFonts,
   Roboto_400Regular,
@@ -6,11 +8,13 @@ import {
   Roboto_700Bold,
   Roboto_900Black,
 } from "@expo-google-fonts/roboto";
+
 import { LoadingContainer } from "@screens/styles";
-import { StatusBar } from "react-native";
-import { ThemeProvider } from "styled-components";
+
+import { Loading } from "@components/index";
 
 import { Routes } from "./src/routes";
+
 import theme from "./src/theme";
 
 function App() {
