@@ -28,7 +28,7 @@ export default {
     REGULAR: "Roboto_400Regular",
     MEDIUM: "Roboto_500Medium",
     BOLD: "Roboto_700Bold",
-    BLACK: "Roboto_900Black",
+    BLACK: "Roboto_900Black"
   },
 
   FONT_SIZE: {
